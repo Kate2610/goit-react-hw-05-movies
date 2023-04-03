@@ -1,7 +1,7 @@
 import { getMovieByQuery } from 'Services/api';
 import { MoviesList } from 'components/moviesList/MoviesList';
 import { useEffect, useState } from 'react';
-import { Audio } from 'react-loader-spinner';
+import { MagnifyingGlass } from 'react-loader-spinner';
 import { useSearchParams } from 'react-router-dom';
 import { Form } from 'components/form/Form';
 import { toast } from 'react-toastify';
@@ -49,7 +49,7 @@ export const Movies = () => {
         {movies.length > 0 && <MoviesList movies={movies} />}
       </div>
       {isLoading && (
-        <Audio
+        <MagnifyingGlass
           height="80"
           width="80"
           radius="9"

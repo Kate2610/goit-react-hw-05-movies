@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import { getMoviesById } from 'Services/api';
 import css from './MovieDetails.module.css';
-import { Audio } from 'react-loader-spinner';
+import { MagnifyingGlass } from 'react-loader-spinner';
 
 export const MoviesDetails = () => {
   const [movieData, setMovieData] = useState([]);
@@ -86,7 +86,7 @@ export const MoviesDetails = () => {
         </>
       )}
       {isLoading && (
-        <Audio
+        <MagnifyingGlass
           height="80"
           width="80"
           radius="9"
