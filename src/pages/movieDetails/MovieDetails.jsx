@@ -38,7 +38,7 @@ export const MoviesDetails = () => {
     <section className={css.section}>
       {movieData && (
         <>
-          <Link className={css.linkGoBack} to={backLink}>
+          <Link className={css.linkGoBack} to="." onClick={() => window.history.back()}>
             GO BACK
           </Link>
           <div className={css.movieCard}>
